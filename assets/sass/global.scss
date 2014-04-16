@@ -1,0 +1,22 @@
+// FRAMEWORK
+@import "onegrid";
+
+// GLOBAL
+// @import "fontface";
+@import "variables";
+@import "mixins";
+@import "settings";
+@import "icon";
+@import "main";
+
+// LIBS
+@import "flexslider";
+
+@import "header";
+@import "home";
+@import "footer";
+@import "ie";
+
+// RESPONSIVE AND OTHER DEVICE
+@import "media/large.scss";
+

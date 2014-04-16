@@ -1,0 +1,36 @@
+@mixin font-size($sizeValue: 18) {
+  font-size: ($sizeValue) + px;
+  font-size: ($sizeValue / 10) + rem;
+}
+
+@mixin box-shadow($bgValue) 
+{
+	background:$bgValue;
+	border:1px solid lighten($bgValue, 10%);
+	box-shadow:0 0 0 3px $bgValue;
+}
+
+@mixin marker-position($top, $left){
+	left:$left + px;
+	top:$top + px;
+}
+
+@mixin inline-block(){
+	display:inline-block;
+	zoom:1;
+	*display:inline;
+}
+
+@mixin align-center($width, $height){
+	position:absolute;
+	top:50%;
+	left:50%;
+	margin-left: -($width/2)+px;
+	margin-top: -($height/2)+px;
+	width:$width+px;
+	height:$height+px;
+}
+
+@mixin border-radius(){
+	-webkit-border-radius: 50%; -moz-border-radius: 50%; -o-border-radius: 50%; border-radius: 50%;
+}
